@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Dysprosium</title>
+    <title>Azure</title>
     <link rel="icon" type="image/x-icon" href="/images/logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style/main.css" />
+
+    <!-- Custom CSS -->
     <style>
-        /* Add the gradient style for Azure H1 */
+        /* Gradient style for H1 */
         .nebHeader {
             font-size: 3rem;
             color: transparent;
@@ -15,10 +18,49 @@
             -webkit-background-clip: text;
             background-clip: text;
         }
+
+        /* Additional styles for navbar */
+        #navbar {
+            background-color: #9500ff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #navbar h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: white;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar li {
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        #navbar a:hover {
+            color: #6600ff;
+        }
     </style>
 </head>
 <body>
-    <!-- Script for the clock -->
     <script>
         function updateClock() {
             var now = new Date();
@@ -42,7 +84,7 @@
     </script>
 
     <div id="navbar">
-        <h1 class="nebHeader">Dysprosium</h1>
+        <h1 class="nebHeader">Azure</h1>
         <ul>
             <li id="digitalCLOContainerLI">
                 <h2 id="digitalCLOContainer">
@@ -66,13 +108,14 @@
 
     <div id="content">
         <form class="url" action="" method="POST" id="unblocker-form">
-            <input class="omnibox" type="text" id="url" name="url" autocomplete="off" placeholder="Search the web with no restrictions." />
+            <input class="omnibox" type="text" id="url" name="url" autocomplete="off" placeholder="Explore the web freely" />
         </form>
     </div>
 
+    <!-- JavaScript files -->
     <script src="resources/preload.js"></script>
     <script src="resources/theme.js"></script>
-    <script src="resources/mainm.js"></script>
+    <script src="resources/main.js"></script>
     <script src="resources/stealthEngine.js"></script>
 </body>
 </html>
